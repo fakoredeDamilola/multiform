@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Multi-step form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="./assets/styles/style.css">
+</head>
+<body>
+
+  <!-- <div class="wrapper">
+      <div class="banner">
+        <div class="multistep">
+
+          </div>
+      </div>
+  </div> -->
+  <main>
+    <div class="container">
+         <div class="banner">
+      <div class="banner__steps">
+        <div class="banner__step">
+         <div class="banner__number banner__step--active">1</div> 
+         <div class="banner__text">
+          <p>STEP 1</p>
+          <h4>YOUR INFO</h4>
+         </div>
+        </div>
+        <div class="banner__step">
+          <div class="banner__number">2</div> 
+          <div class="banner__text">
+           <p>STEP 2</p>
+           <h4>SELECT PLAN</h4>
+          </div>
+        </div>
+        <div class="banner__step">
+          <div class="banner__number">3</div> 
+          <div class="banner__text">
+           <p>STEP 3</p>
+           <h4>ADD-ONS</h4>
+          </div>
+        </div>
+        <div class="banner__step">
+          <div class="banner__number">4</div> 
+          <div class="banner__text">
+           <p>STEP 4</p>
+           <h4>SUMMARY</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper">
+       <section class="section__container">
+      <div class="section__one section active">
+        <div class="section__heading">
+           <h1>Personal Info</h1>
+        <p>Please provide your name, email address, and phone number.</p>
+        </div>
+       
+        <div class="section__one-form">
+          <div class="section__one-input">
+            <div class="label__error">
+             <label for="name">Name</label>
+            <div class="error">This field is required</div>
+            </div>
+           
+            <input type="text" placeholder="e.g Stephen King" id="name_input" value="jj" data-error="0" />
+          </div>
+          <div class="section__one-input">
+            <div class="label__error">
+            <label for="email">Email Address</label>
+            <div class="error">This field is required</div>
+            </div>
+            
+            <input type="text" placeholder="e.g Stephenking@lorem.com" id="email_input" value="hh" data-error="1" />
+          </div>
+          <div class="section__one-input">
+            <div class="label__error">
+            <label for="phone">Phone Number</label>
+            <div class="error">This field is required</div> 
+            </div>
+            
+            <input type="number" placeholder=" e.g. +1 234 567 890" id="phone_input" value="12" data-error="2" />
+          </div>
+        </div>
+      </div>
+     <div class="section__two section">
+      <div class="section__heading">
+ <h1>Select your plan</h1>
+        <p>You have the option of monthly or yearly billing.</p>
+      </div>
+       
+        <div class="section__two-cards">
+          <div class="card__error">Select a plan</div>
+          <div class="section__two__container">
+              <div class="section__two-card" data-type="arcade" data-amount="9"  data-free="2">
+          <div class="section__two-card-image"><img src="./assets/images/icon-arcade.svg" alt="img"/></div>
+          <div class="section__two-card-text">
+            <h2> Arcade</h2>
+            <p class="monthly__plan">$9/mo</p>
+            <div class="yearly__plan">
+              <p>$90/yr</p>
+              <h6>2 months free</h6>
+            </div>
+          </div>
+         </div>
+         <div class="section__two-card" data-type="advanced" data-amount="12" data-free="2">
+          <div class="section__two-card-image"><img src="./assets/images/icon-advanced.svg" alt="img"/></div>
+          <div class="section__two-card-text">
+            <h2>Advanced</h2>
+            <p class="monthly__plan">$12/mo</p>
+            <div class="yearly__plan">
+              <p>$120/yr</p>
+              <h6>2 months free</h6>
+            </div>
+          </div>
+         </div>
+         <div class="section__two-card" data-type="advanced" data-amount="15" data-free="2">
+          <div class="section__two-card-image"><img src="./assets/images/icon-pro.svg" alt="img"/></div>
+          <div class="section__two-card-text">
+            <h2>Pro</h2>
+            <p class="monthly__plan">$15/mo</p>
+            <div class="yearly__plan">
+              <p>$150/yr</p>
+              <h6>2 months free</h6>
+            </div>
+          </div>
+         </div>
+          </div>
+       
+        </div>
+        <div class="section__two-radio">
+          <div class="selected">Monthly</div>
+          <label class="switch">
+            <input type="checkbox" id="slider">
+            <span class="slider round"></span>
+          </label>
+          <div>Yearly</div>
+        </div>
+      </div>
+      <div class="section__three section">
+        <div class="section__heading">
+    <h1>Pick add-ons</h1>
+        <p>Add-ons help enhance your gaming experience.</p>
+          </div>
+    
+       <div class="section__three-addons">
+        <div class="section__three-addon" data-name="Online service" data-description="Access to multiplayer games" data-price="1">
+          <div class="section__three-addon-checkbox">
+            <input type="checkbox" class="section__three-checkbox" name="addon" id="online">
+          </div>
+          <div class="section__three-addon-text">
+            <h4>Online service</h4>
+             <p>Access to multiplayer games</p> 
+          </div>
+          <h5 class="section__three-addon-monthly">+$1/mo</h5>
+          <h5 class="section__three-addon-yearly">+$10/yr</h5>
+        </div>
+        <div class="section__three-addon" data-name="Larger storage" data-description="Extra 1TB of cloud save" data-price="2">
+          <div class="section__three-addon-checkbox">
+            <input type="checkbox" class="section__three-checkbox" name="addon" id="online">
+          </div>
+          <div class="section__three-addon-text">
+           <h4>Larger storage</h4> 
+           <p>Extra 1TB of cloud save</p>
+          </div>
+          <h5 class="section__three-addon-monthly">+$2/mo</h5>
+          <h5 class="section__three-addon-yearly">+$20/yr</h5>
+        </div>
+        <div class="section__three-addon" data-name="Customizable Profile" data-description="Custom theme on your profile" data-price="2">
+          <div class="section__three-addon-checkbox">
+            <input type="checkbox" class="section__three-checkbox" name="addon" id="online">
+          </div>
+          <div class="section__three-addon-text">
+            <h4>Customizable Profile</h4>
+            <p>Custom theme on your profile</p>
+          </div>
+          <h5 class="section__three-addon-monthly">+$2/mo</h5>
+          <h5 class="section__three-addon-yearly">+$20/yr</h5>
+        </div>
+       </div>
+      </div>
+      <div class="section__four section">
+        <div class="section__heading">
+ <h1>Finishing up</h1>
+        <p>Double-check everything looks OK before confirming.</p>
+          </div>
+       
+        <div class="section__four-summary">
+          dynamically add info here
+        </div>
+      </div>
+      <div class="section__five section">
+        <img src="./assets/images/thank_you.svg" alt=" thank you"/>
+        <h3>Thank you!</h3>
+        <p> Thanks for confirming your subscription! We hope you have fun 
+          using our platform. If you ever need support, please feel free 
+          to email us at support@loremgaming.com.</p>
+      </div>
+     
+    </section> 
+     <div class="buttons">
+        <button class="button button-back">
+          go back
+        </button>
+        <button class="button button-confirm" id="confirm">
+          confirm
+        </button>
+      </div>
+    </div>
+    </div>
+ 
+  
+  </main>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
